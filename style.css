@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    margin-top: 5%;
+}
+
+.main-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.head h1{
+    margin-bottom: 40px;
+    font-size: 30px;
+    font-weight: 900;
+    position: relative;
+}
+
+.head h1::after{
+    position: absolute;
+    content: '';
+    background-color: #ff0000;
+    height: 4px;
+    width: 20px;
+    left: 50%;
+    bottom: -10px;
+    transform: translateX(-50%);
+    animation-name: ani;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes ani{
+    0%{
+        width: 20px;
+    }
+    100%{
+        width: 500px;
+    }
+}
+
+.primeFactor-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 6px solid black;
+    padding: 10px 20px;
+    border-radius: 30px;
+}
+
+.input-primeFactor p{
+    margin: 50px 50px;
+    border: 4px solid blue;
+    padding: 40px;
+    font-size: 25px;
+    font-weight: 900;
+}
+
+.arrow p{
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+.output-primeFactor p{
+    margin: 50px 50px;
+    border: 4px solid green;
+    padding: 40px;
+    font-size: 25px;
+    font-weight: 900;
+}
+
